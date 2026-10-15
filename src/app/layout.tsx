@@ -1,29 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Anton, Bebas_Neue, Inter } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CursorProvider } from "@/components/cursor/CursorContext";
 import { CustomCursor } from "@/components/cursor/CustomCursor";
 import "./globals.css";
 
-const anton = Anton({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-anton",
-  display: "swap",
-});
-
-const bebasNeue = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-bebas",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+// Fonts are loaded locally via CSS variables to avoid Google Fonts blocking during build.
+const anton = { variable: "--font-anton" };
+const bebasNeue = { variable: "--font-bebas" };
+const inter = { variable: "--font-inter" };
 
 export const metadata: Metadata = {
   title: "The GOAT's — Cristiano Ronaldo Cinematic Tribute",
@@ -51,10 +35,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D0B05",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  themeColor: "#0A0A0A",
 };
 
 export default function RootLayout({
@@ -68,10 +52,7 @@ export default function RootLayout({
       className={`${anton.variable} ${bebasNeue.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
-      <body className="antialiased bg-bg text-text selection:bg-primary selection:text-black min-h-screen relative overflow-x-hidden">
-        {/* Subtle 35mm film grain overlay */}
-        <div className="cinematic-noise" aria-hidden="true" />
-
+      <body className="antialiased bg-[#0A0A0A] text-white overflow-x-hidden">
         <SmoothScrollProvider>
           <CursorProvider>
             <CustomCursor />
