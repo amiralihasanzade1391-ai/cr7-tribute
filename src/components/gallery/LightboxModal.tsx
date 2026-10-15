@@ -89,7 +89,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-[9999] flex items-center justify-center p-3 sm:p-6 md:p-10 bg-black/85 backdrop-blur-2xl"
+        className="fixed inset-0 z-[9999] flex items-center justify-center p-0 md:p-6 lg:p-10 bg-black/90 backdrop-blur-2xl"
         onClick={onClose}
         role="dialog"
         aria-modal="true"
@@ -125,17 +125,17 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
         {/* Main Modal Card */}
         <motion.div
-          initial={{ scale: 0.92, opacity: 0 }}
+          initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.92, opacity: 0 }}
+          exit={{ scale: 0.95, opacity: 0 }}
           transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
           onClick={(e) => e.stopPropagation()}
-          className="relative w-full max-w-6xl max-h-[92vh] overflow-hidden rounded-3xl border border-gold/30 bg-[#09090D] shadow-2xl flex flex-col lg:flex-row text-white"
+          className="relative w-full h-full md:h-auto md:max-w-6xl md:max-h-[92vh] overflow-y-auto lg:overflow-hidden rounded-none md:rounded-3xl border-0 md:border md:border-gold/30 bg-[#09090D] shadow-2xl flex flex-col lg:flex-row text-white"
         >
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-40 p-2.5 rounded-full border border-white/15 bg-black/60 backdrop-blur-md text-gray-300 hover:text-white hover:border-gold transition-all duration-300"
+            className="absolute top-4 right-4 z-40 min-w-[44px] min-h-[44px] p-2.5 rounded-full border border-white/20 bg-black/80 backdrop-blur-md text-gray-200 hover:text-white hover:border-gold transition-all duration-300 flex items-center justify-center"
             aria-label="Close lightbox modal (Escape)"
           >
             <X size={20} />
@@ -180,6 +180,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                   src={moment.image}
                   alt={moment.title}
                   fill
+                  loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 62vw"
                   className="object-cover object-center filter brightness-95"
                 />

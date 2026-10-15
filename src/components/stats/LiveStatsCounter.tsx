@@ -11,7 +11,7 @@ export const LiveStatsCounter: React.FC = () => {
   return (
     <section
       id="live-stats"
-      className="relative w-full py-24 sm:py-32 px-6 sm:px-12 bg-[#08080B] text-white overflow-hidden"
+      className="relative w-full py-24 sm:py-32 bg-[#08080B] text-white overflow-hidden"
       aria-label="Cristiano Ronaldo Live Career Statistics and Records"
     >
       {/* Background Ambient Lighting */}

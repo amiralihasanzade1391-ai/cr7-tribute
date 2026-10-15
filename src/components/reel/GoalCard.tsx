@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Play } from "lucide-react";
 import { Goal } from "@/data/goals";
 
@@ -20,10 +21,13 @@ export function GoalCard({ goal, onClick }: GoalCardProps) {
       {/* Thumbnail */}
       <div className="relative aspect-video rounded-xl overflow-hidden border border-zinc-800 group-hover:border-yellow-500/60 transition-all duration-300">
         {!imgError ? (
-          <img
+          <Image
             src={goal.thumbnail}
             alt={goal.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            fill
+            sizes="(max-width: 768px) 280px, 320px"
+            loading="lazy"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             onError={() => setImgError(true)}
           />
         ) : (

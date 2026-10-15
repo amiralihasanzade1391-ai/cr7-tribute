@@ -26,7 +26,7 @@ export const IconicMomentsGallery: React.FC = () => {
   return (
     <section
       id="iconic-moments"
-      className="relative w-full py-24 sm:py-32 px-6 sm:px-12 bg-[#060608] text-white overflow-hidden"
+      className="relative w-full py-24 sm:py-32 bg-[#060608] text-white overflow-hidden"
       aria-label="Cristiano Ronaldo Iconic Moments Gallery"
     >
       {/* Background Ambient Radial Glow */}
@@ -93,7 +93,7 @@ export const IconicMomentsGallery: React.FC = () => {
         {/* Masonry Grid (Pure CSS Columns for 60fps Performance) */}
         <motion.div
           layout
-          className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6"
+          className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6"
         >
           <AnimatePresence>
             {filteredMoments.map((moment, index) => (

@@ -15,7 +15,7 @@ export function TrophyCabinet() {
   const total = TROPHIES_DATA.filter((t) => t.category !== "records").reduce((sum, t) => sum + t.count, 0);
 
   return (
-    <section id="trophy-cabinet" className="py-24 px-4 sm:px-8 lg:px-12 bg-black">
+    <section id="trophy-cabinet" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

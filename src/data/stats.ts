@@ -13,7 +13,7 @@ export const CAREER_STATS: CareerStat[] = [
     suffix: "+",
     icon: "Flame",
     color: "#FEBE10",
-    description: "The all-time top goalscorer in the history of men's association football.",
+    description: "The all-time top goalscorer in men's football history across 1,300+ official matches.",
   },
   {
     id: "ucl",
@@ -22,7 +22,7 @@ export const CAREER_STATS: CareerStat[] = [
     suffix: "x",
     icon: "Trophy",
     color: "#FFFFFF",
-    description: "First player to win 5 modern UCL titles; historic 3-peat with Real Madrid.",
+    description: "First player to win 5 modern UCL titles; historic three-peat with Real Madrid.",
   },
   {
     id: "ballon-dor",
@@ -36,11 +36,47 @@ export const CAREER_STATS: CareerStat[] = [
   {
     id: "trophies",
     label: "Major Career Trophies",
-    value: 35,
+    value: 36,
     suffix: "",
     icon: "Crown",
     color: "#E5E7EB",
-    description: "Championship trophies conquered across 4 nations and international stage.",
+    description: "36 major championship trophies conquered across four nations and international stage.",
+  },
+  {
+    id: "international-goals",
+    label: "International Goals (Portugal)",
+    value: 146,
+    suffix: "+",
+    icon: "ShieldAlert",
+    color: "#C8102E",
+    description: "All-time world record holder with 146 goals in 233 international caps.",
+  },
+  {
+    id: "ucl-goals",
+    label: "All-Time UCL Goals",
+    value: 140,
+    suffix: "+",
+    icon: "Flame",
+    color: "#38BDF8",
+    description: "All-time top goalscorer in UEFA Champions League history across 183 appearances.",
+  },
+  {
+    id: "ucl-appearances",
+    label: "UCL Appearances Record",
+    value: 183,
+    suffix: "",
+    icon: "Sparkles",
+    color: "#FFFFFF",
+    description: "All-time record appearances in European Cup / Champions League history.",
+  },
+  {
+    id: "hat-tricks",
+    label: "Career Hat-Tricks",
+    value: 66,
+    suffix: "x",
+    icon: "Award",
+    color: "#FBBF24",
+    description: "66 career hat-tricks across domestic, continental, and international football.",
   },
   {
     id: "assists",
@@ -51,16 +87,39 @@ export const CAREER_STATS: CareerStat[] = [
     color: "#38BDF8",
     description: "All-time top assist provider in UEFA Champions League history (42).",
   },
-  {
-    id: "international-goals",
-    label: "International Goals (Portugal)",
-    value: 133,
-    suffix: "+",
-    icon: "ShieldAlert",
-    color: "#C8102E",
-    description: "World record holder for most international goals in football history.",
-  },
 ];
+
+export interface ClubGoalStat {
+  club: string;
+  goals: number;
+  games: number;
+  period: string;
+}
+
+export const CLUB_GOALS_DATA: ClubGoalStat[] = [
+  { club: "Real Madrid", goals: 450, games: 438, period: "2009 — 2018" },
+  { club: "Portugal", goals: 146, games: 233, period: "2003 — Present" },
+  { club: "Manchester United", goals: 145, games: 346, period: "2003–09, 2021–22" },
+  { club: "Al Nassr", goals: 134, games: 140, period: "2023 — Present" },
+  { club: "Juventus", goals: 101, games: 134, period: "2018 — 2021" },
+  { club: "Sporting CP", goals: 5, games: 31, period: "2002 — 2003" },
+];
+
+export const CAREER_TOTALS = {
+  goals: 981,
+  matches: 1300,
+  internationalGoals: 146,
+  internationalCaps: 233,
+  majorTrophies: 36,
+  ballonDor: 5,
+  uclTitles: 5,
+  uclGoals: 140,
+  uclAppearances: 183,
+  uclKnockoutGoals: 67,
+  hatTricks: 66,
+  singleSeasonUclRecord: 17,
+  assists: 256,
+};
 
 export const MILESTONE_RING_TICKS: MilestoneRingTick[] = [
   { milestone: 500, year: "2015", opponent: "vs Malmö FF (UCL)", angle: 180 },
@@ -156,7 +215,7 @@ export const ICONIC_GOALS_BY_TYPE: Record<string, MilestoneGoal[]> = {
       competition: "Serie A",
       date: "December 18, 2019",
       description:
-        "Superhuman 2.56-meter leap with an airborne hang time of 0.92 seconds, defying gravitational limits.",
+        "Superhuman 2.56-meter leap with an airborne hang time of 0.71 seconds, defying gravitational limits.",
       isIconic: true,
       youtubeId: "AunImole9HI",
       goalType: "header",
@@ -269,7 +328,7 @@ export const GOAL_BREAKDOWN_DATA: GoalBreakdownItem[] = [
     id: "rightFoot",
     label: "Right Foot Precision",
     percentage: 65,
-    count: 590,
+    count: 638,
     color: "#FEBE10",
     barGradient: "linear-gradient(90deg, #D97706 0%, #FEBE10 100%)",
     icon: "Footprints",
@@ -279,7 +338,7 @@ export const GOAL_BREAKDOWN_DATA: GoalBreakdownItem[] = [
     id: "leftFoot",
     label: "Left Foot Weak-Foot Mastery",
     percentage: 17,
-    count: 154,
+    count: 167,
     color: "#E2E8F0",
     barGradient: "linear-gradient(90deg, #64748B 0%, #E2E8F0 100%)",
     icon: "Zap",
@@ -289,7 +348,7 @@ export const GOAL_BREAKDOWN_DATA: GoalBreakdownItem[] = [
     id: "penalty",
     label: "Clutch Penalties",
     percentage: 17,
-    count: 158,
+    count: 167,
     color: "#FFFFFF",
     barGradient: "linear-gradient(90deg, #94A3B8 0%, #FFFFFF 100%)",
     icon: "Target",
@@ -299,7 +358,7 @@ export const GOAL_BREAKDOWN_DATA: GoalBreakdownItem[] = [
     id: "header",
     label: "Aerial Dominance & Headers",
     percentage: 16,
-    count: 145,
+    count: 157,
     color: "#F97316",
     barGradient: "linear-gradient(90deg, #C2410C 0%, #F97316 100%)",
     icon: "ArrowUpCircle",
@@ -309,7 +368,7 @@ export const GOAL_BREAKDOWN_DATA: GoalBreakdownItem[] = [
     id: "freeKick",
     label: "Knuckleball Free-Kicks",
     percentage: 7,
-    count: 66,
+    count: 69,
     color: "#FBBF24",
     barGradient: "linear-gradient(90deg, #B45309 0%, #FBBF24 100%)",
     icon: "Flame",

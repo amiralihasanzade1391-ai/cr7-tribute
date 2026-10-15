@@ -221,14 +221,14 @@ export const CustomCursor: React.FC = () => {
       {/* High-Performance Canvas for Particle Trails */}
       <canvas
         ref={canvasRef}
-        className="pointer-events-none fixed inset-0 z-[9990]"
+        className="canvas-particles pointer-events-none fixed inset-0 z-[9990]"
         aria-hidden="true"
       />
 
       {/* Outer Spring Ring */}
       <div
         ref={ringRef}
-        className={`pointer-events-none fixed top-0 left-0 z-[9992] rounded-full border border-solid transition-[width,height,border-color,background-color] duration-300 ease-out flex items-center justify-center ${ringSizeClass} ${
+        className={`custom-cursor pointer-events-none fixed top-0 left-0 z-[9992] rounded-full border border-solid transition-[width,height,border-color,background-color] duration-300 ease-out flex items-center justify-center ${ringSizeClass} ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ willChange: "transform" }}
@@ -245,7 +245,7 @@ export const CustomCursor: React.FC = () => {
       {/* Inner Precision Dot */}
       <div
         ref={dotRef}
-        className={`pointer-events-none fixed top-0 left-0 z-[9993] rounded-full transition-opacity duration-150 ${dotSizeClass} ${
+        className={`custom-cursor pointer-events-none fixed top-0 left-0 z-[9993] rounded-full transition-opacity duration-150 ${dotSizeClass} ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ willChange: "transform" }}

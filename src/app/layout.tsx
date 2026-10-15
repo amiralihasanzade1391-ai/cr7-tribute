@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Anton, Bebas_Neue, Inter } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CursorProvider } from "@/components/cursor/CursorContext";
-import { CustomCursor } from "@/components/cursor/CustomCursor";
 import "./globals.css";
 
 const anton = Anton({
@@ -68,13 +67,19 @@ export default function RootLayout({
       className={`${anton.variable} ${bebasNeue.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://upload.wikimedia.org" />
+        <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
+        <link rel="dns-prefetch" href="https://img.youtube.com" />
+      </head>
       <body className="antialiased bg-bg text-text selection:bg-primary selection:text-black min-h-screen relative overflow-x-hidden">
         {/* Subtle 35mm film grain overlay */}
         <div className="cinematic-noise" aria-hidden="true" />
 
         <SmoothScrollProvider>
           <CursorProvider>
-            <CustomCursor />
             {children}
           </CursorProvider>
         </SmoothScrollProvider>

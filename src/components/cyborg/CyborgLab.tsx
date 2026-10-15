@@ -7,7 +7,7 @@ import { RecoveryDial } from "./RecoveryDial";
 
 export function CyborgLab() {
   return (
-    <section id="cyborg-lab" className="py-24 px-4 sm:px-8 lg:px-12 bg-black relative overflow-hidden">
+    <section id="cyborg-lab" className="py-24 bg-black relative overflow-hidden">
       {/* Ambient glow */}
       <div className="absolute inset-0 pointer-events-none opacity-30">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-cyan-500/20 blur-[120px]" />

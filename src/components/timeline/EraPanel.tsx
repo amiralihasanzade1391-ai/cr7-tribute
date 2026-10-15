@@ -47,10 +47,8 @@ export const EraPanel: React.FC<EraPanelProps> = ({
   return (
     <article
       ref={panelRef}
-      className="relative w-screen h-screen flex-shrink-0 flex flex-col justify-between overflow-hidden select-none transition-colors duration-800"
+      className="relative w-full lg:w-screen min-h-screen lg:h-screen flex-shrink-0 flex flex-col justify-between overflow-hidden select-none transition-colors duration-800 py-8 lg:py-0"
       style={{
-        width: "100vw",
-        height: "100vh",
         backgroundColor: era.colors.bg || "#0D0B05",
         color: era.colors.text || "#FFFFFF",
       }}
@@ -159,7 +157,7 @@ export const EraPanel: React.FC<EraPanelProps> = ({
 
           {/* Main Visual Image Card with Clip-Path Reveal */}
           <div
-            className="relative w-full h-[60vh] md:h-[70vh] lg:h-[75vh] rounded-2xl sm:rounded-3xl overflow-hidden border shadow-2xl z-10 transition-all duration-700 group"
+            className="relative w-full h-[40vh] sm:h-[50vh] md:h-[65vh] lg:h-[75vh] rounded-2xl sm:rounded-3xl overflow-hidden border shadow-2xl z-10 transition-all duration-700 group"
             style={{
               borderColor: era.colors.borderColor,
               boxShadow: `0 20px 50px ${era.colors.bg}80`,
@@ -173,6 +171,7 @@ export const EraPanel: React.FC<EraPanelProps> = ({
                 fill
                 unoptimized
                 priority={priorityImage && imgIdx === 0}
+                loading={priorityImage && imgIdx === 0 ? undefined : "lazy"}
                 sizes="(max-width: 1024px) 100vw, 55vw"
                 className="absolute inset-0 object-cover filter brightness-90 contrast-105 transition-opacity ease-in-out"
                 style={{

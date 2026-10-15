@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Trophy } from "@/types/trophy";
 
@@ -39,9 +40,12 @@ export function TrophyItem({ trophy }: TrophyItemProps) {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
             {trophy.image || (trophy.icon && (trophy.icon.startsWith("http") || trophy.icon.startsWith("/"))) ? (
-              <img
+              <Image
                 src={trophy.image || trophy.icon}
                 alt={trophy.name}
+                width={76}
+                height={64}
+                loading="lazy"
                 className="h-16 w-auto max-w-[76px] object-contain drop-shadow-[0_8px_16px_rgba(254,190,16,0.35)] rounded-md"
               />
             ) : (

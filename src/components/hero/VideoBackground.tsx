@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 // Dynamic import of ReactPlayer with SSR disabled to prevent hydration mismatches
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
@@ -177,6 +178,17 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({
       className="absolute inset-0 w-full h-full overflow-hidden select-none pointer-events-none"
       aria-hidden="true"
     >
+      {/* 0. Hero LCP Preload Backdrop Image */}
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg/500px-Cristiano_Ronaldo_%2835480124482%29.jpg"
+        alt="Cristiano Ronaldo Hero"
+        width={1920}
+        height={1080}
+        priority={true}
+        sizes="100vw"
+        className="absolute inset-0 w-full h-full object-cover object-center opacity-25 z-0"
+      />
+
       {/* 1. Underlying Canvas Particles & Ambient Radial Glow */}
       <canvas
         ref={canvasRef}

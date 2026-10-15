@@ -94,6 +94,7 @@ export const MomentCard: React.FC<MomentCardProps> = ({
         alt={activeMoment.title || moment.title}
         fill
         priority={priority}
+        loading={priority ? undefined : "lazy"}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover filter brightness-[0.82] contrast-105 group-hover:scale-105 group-hover:brightness-95 transition-all duration-700 ease-out"
         style={{

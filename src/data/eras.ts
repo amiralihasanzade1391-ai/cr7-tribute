@@ -15,10 +15,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "The Raw Prodigy of Madeira",
     narrative:
       "A teenage virtuoso with lightning stepovers shocked Portuguese football before dismantling Manchester United in a single legendary friendly. Sir Alex Ferguson refused to leave Lisbon until the contract was signed.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cristiano_Ronaldo.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg/500px-Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cristiano_Ronaldo.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/49/Cristiano_Ronaldo_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg/500px-Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/C.Ronaldo_at_Museum_Mundo_Sporting.JPG/500px-C.Ronaldo_at_Museum_Mundo_Sporting.JPG",
     ],
     colors: {
       primary: "#008C45",
@@ -44,7 +44,7 @@ export const ERAS_DATA: Era[] = [
       title: "The Lisbon Discovery",
       description:
         "August 6, 2003: Sporting defeats Man United 3-1 at Estádio José Alvalade, compelling Rio Ferdinand and Gary Neville to beg Ferguson to sign him.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cristiano_Ronaldo.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg/500px-Ficha_de_jogador_de_Cristiano_Ronaldo_no_Museu_Sporting.jpg",
       badge: "The Lisbon Discovery",
       quote: "After we played Sporting, the lads in the dressing room urged me to sign him immediately.",
       opponent: "Manchester United",
@@ -77,11 +77,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "Inheriting Number 7 & Conquering Europe",
     narrative:
       "Handed the shirt of Best, Cantona, and Beckham, Cristiano transformed into an unstoppable physical force. In 2008, he conquered the Premier League, lifted the Champions League in Moscow, and claimed his first Ballon d'Or.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/71/Cristiano_Ronaldo_of_Manchester_United%2C_November_5%2C_2008.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ronaldo_-_Manchester_United_vs_Chelsea.jpg/500px-Ronaldo_-_Manchester_United_vs_Chelsea.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/7/71/Cristiano_Ronaldo_of_Manchester_United%2C_November_5%2C_2008.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/00/Ronaldo_-_Manchester_United_vs_Chelsea.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Cristiano_Ronaldo_-_Celtic_2008.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ronaldo_-_Manchester_United_vs_Chelsea.jpg/500px-Ronaldo_-_Manchester_United_vs_Chelsea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cristiano_Ronaldo_of_Manchester_United%2C_November_5%2C_2008.jpg/500px-Cristiano_Ronaldo_of_Manchester_United%2C_November_5%2C_2008.jpg",
     ],
     colors: {
       primary: "#DA291C",
@@ -114,7 +113,7 @@ export const ERAS_DATA: Era[] = [
       title: "Moscow Rain & First European Crown",
       description:
         "Towering header through torrential Moscow rain against Chelsea, sealing European glory and his first Ballon d'Or at age 23.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Ronaldo_-_Manchester_United_vs_Chelsea.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ronaldo_-_Manchester_United_vs_Chelsea.jpg/500px-Ronaldo_-_Manchester_United_vs_Chelsea.jpg",
       badge: "European Champion 2008",
       quote: "He surpassed all other great players I ever managed at Manchester United.",
       opponent: "Chelsea FC",
@@ -147,11 +146,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "The Galáctico Supreme & All-Time Top Scorer",
     narrative:
       "Presented before 80,000 fanatical fans at the Santiago Bernabéu, Cristiano rewrote the laws of goalscoring. 450 goals in 438 matches. Four Champions League crowns including an unprecedented historic three-peat.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/61/Cristiano_Ronaldo%2C_2010.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg/500px-Cristiano_Ronaldo_%2835480124482%29.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/Cristiano_Ronaldo%2C_2010.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cristiano_Ronaldo_Real_Madrid_Gareth_Bale_Tottenham.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg/500px-Cristiano_Ronaldo_%2835480124482%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/SK_20170808_214655_%2836289315022%29.jpg/500px-SK_20170808_214655_%2836289315022%29.jpg",
     ],
     colors: {
       primary: "#FEBE10",
@@ -184,7 +182,7 @@ export const ERAS_DATA: Era[] = [
       title: "The Turin Bicycle Kick",
       description:
         "April 3, 2018: A 2.38-meter overhead bicycle kick against Buffon in Turin that compelled the entire Juventus stadium to stand and applaud.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Cristiano_Ronaldo_%2835480124482%29.jpg/500px-Cristiano_Ronaldo_%2835480124482%29.jpg",
       badge: "The Turin Masterpiece",
       quote: "Cristiano is from another planet. When he plays, Real Madrid starts 1-0 up.",
       opponent: "Juventus",
@@ -217,10 +215,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "Italian Mastery & The 100-Goal Sprint",
     narrative:
       "Arriving in Turin as a modern gladiator, Ronaldo conquered Italy's defensive catenaccio, netting 101 goals in 134 games to become the fastest player to hit a century in Bianconeri history.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cristiano-ronaldo-juventus-2019.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg/500px-2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cristiano-ronaldo-juventus-2019.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/ce/2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg/500px-2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/CR7_2_11_2019.jpg/500px-CR7_2_11_2019.jpg",
     ],
     colors: {
       primary: "#FFFFFF",
@@ -251,7 +249,7 @@ export const ERAS_DATA: Era[] = [
       title: "The Atletico Madrid Remontada",
       description:
         "Down 2-0 from the first leg against Simeone's Atletico Madrid, Ronaldo delivered a solo masterclass hat-trick to send Turin into absolute delirium.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cristiano-ronaldo-juventus-2019.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg/500px-2019-20_Serie_A_-_Torino_v_Juventus_-_Cristiano_Ronaldo.jpg",
       badge: "The Solo Remontada",
       quote: "That is why Juventus bought me: for nights like this.",
       opponent: "Atletico Madrid",
@@ -284,10 +282,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "The Romantic Homecoming to Old Trafford",
     narrative:
       "'Viva Ronaldo' resonated once again through the Theatre of Dreams as the prodigal son returned, scoring twice on his debut and netting sensational hat-tricks against Arsenal and Tottenham.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg/500px-Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cristiano_Ronaldo_vs_Everton_2021.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg/500px-Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cristiano_Ronaldo_vs_Everton_2021.jpg/500px-Cristiano_Ronaldo_vs_Everton_2021.jpg",
     ],
     colors: {
       primary: "#DA291C",
@@ -317,7 +315,7 @@ export const ERAS_DATA: Era[] = [
       title: "The Electric Homecoming Debut",
       description:
         "September 11, 2021: Old Trafford reaches fever pitch as Cristiano scores twice against Newcastle United in front of Sir Alex Ferguson.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg/500px-Manchester_United_v_Newcastle_United%2C_11_September_2021_%2805%29.jpg",
       badge: "The Old Trafford Return",
       quote: "I am back where I belong. My love for Manchester United has never faded.",
       opponent: "Newcastle United",
@@ -350,11 +348,10 @@ export const ERAS_DATA: Era[] = [
     tagline: "Pioneering the Middle Eastern Football Boom",
     narrative:
       "Igniting a global migration of world-class talent to Saudi Arabia, Cristiano shattered the all-time single-season scoring record with 35 goals in 31 games, becoming the first player in history to top score in 4 distinct nations.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cristiano_Ronaldo_Al-Nassr_2023.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg/500px-Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cristiano_Ronaldo_Al-Nassr_2023.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Cristiano_Ronaldo_in_Al_Nassr_in_2023.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg/500px-Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_23.jpg/500px-Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_23.jpg",
     ],
     colors: {
       primary: "#FFD700",
@@ -384,7 +381,7 @@ export const ERAS_DATA: Era[] = [
       title: "All-Time Single Season Record (35 Goals)",
       description:
         "May 2024: A stunning chest-and-overhead finish seals his 35th league goal, shattering the all-time record and sealing top scorer status across four different countries.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cristiano_Ronaldo_Al-Nassr_2023.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg/500px-Cristiano_Ronaldo_with_Al_Nassr%2C_19_September_2023_-_34.jpg",
       badge: "The Pioneer Record",
       quote: "I don't follow records; records follow me.",
       opponent: "Al-Ittihad",
@@ -416,12 +413,12 @@ export const ERAS_DATA: Era[] = [
     kitNumber: "#7",
     tagline: "The Immortal Captain & All-Time International King",
     narrative:
-      "Leader of an entire nation. The all-time world record holder for most caps (215+) and most international goals (133+). The captain who guided Portugal to their first major international silverware at Euro 2016.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Cristiano_Ronaldo_Euro_2016.jpg",
+      "Leader of an entire nation. The all-time world record holder for most caps (233) and most international goals (146). The captain who guided Portugal to their first major international silverware at Euro 2016.",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cristiano_Ronaldo_Euro_2016.jpg/500px-Cristiano_Ronaldo_Euro_2016.jpg",
     heroImages: [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Cristiano_Ronaldo_Euro_2016.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4a/Argentine_-_Portugal_-_Cristiano_Ronaldo.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Euro_2016_Cristiano_Ronaldo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cristiano_Ronaldo_Euro_2016.jpg/500px-Cristiano_Ronaldo_Euro_2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/1_cristiano_ronaldo_2016.jpg/500px-1_cristiano_ronaldo_2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2019_UEFA_Nations_League_Finals_Topscorer_Award_CR7Museum.jpg/500px-2019_UEFA_Nations_League_Finals_Topscorer_Award_CR7Museum.jpg",
     ],
     colors: {
       primary: "#C8102E",
@@ -432,14 +429,14 @@ export const ERAS_DATA: Era[] = [
       borderColor: "rgba(4, 106, 56, 0.4)",
     },
     stats: {
-      appearances: 216,
-      goals: 133,
+      appearances: 233,
+      goals: 146,
       assists: 36,
       trophies: 2,
     },
     keyStats: [
-      { label: "World Record Goals", value: 133 },
-      { label: "International Caps", value: 216 },
+      { label: "World Record Goals", value: 146 },
+      { label: "International Caps", value: 233 },
       { label: "Major Trophies", value: 2, suffix: "x" },
     ],
     trophiesList: [
@@ -452,7 +449,7 @@ export const ERAS_DATA: Era[] = [
       title: "Glory at Stade de France (Euro 2016)",
       description:
         "July 10, 2016: Overcoming early injury, Cristiano marshals from the touchline as Éder strikes in extra time to give Portugal their first major trophy in history.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Cristiano_Ronaldo_Euro_2016.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cristiano_Ronaldo_Euro_2016.jpg/500px-Cristiano_Ronaldo_Euro_2016.jpg",
       badge: "European Champions 2016",
       quote: "This trophy belongs to all Portuguese people. We wrote history for our nation.",
       opponent: "France",
@@ -466,8 +463,8 @@ export const ERAS_DATA: Era[] = [
       context: "Cristiano Ronaldo, Paris, July 2016",
     },
     highlights: [
-      "World record for most international goals in men's football history: 133+",
-      "World record for most international caps in men's football history: 216+",
+      "World record for most international goals in men's football history: 146",
+      "World record for most international caps in men's football history: 233",
       "Only player to score in 5 different FIFA World Cups and 5 European Championships",
     ],
   },

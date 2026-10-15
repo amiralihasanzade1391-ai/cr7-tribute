@@ -14,7 +14,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-1",
     title: "The Turin Bicycle Kick",
     description:
-      "A superhuman 2.38-meter overhead bicycle kick in Turin that commanded a spontaneous standing ovation from opposing Juventus fans. Widely regarded as one of the greatest technical strikes in European football history.",
+      "April 3, 2018: Real Madrid vs Juventus, UCL Quarter-Final at Allianz Stadium in Turin. Minute 64. A superhuman 2.38-meter overhead bicycle kick assisted by Dani Carvajal, leaving Gianluigi Buffon motionless and commanding a spontaneous standing ovation from opposing Juventus fans.",
     year: 2018,
     opponent: "Juventus",
     competition: "UEFA Champions League Quarter-Final",
@@ -29,7 +29,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-2",
     title: "The Physics-Defying Portsmouth Knuckleball",
     description:
-      "A 105 km/h dipping free-kick at Old Trafford that defied aerodynamic logic, rocketing into David James' top corner with zero rotational ball spin. Sir Alex Ferguson famously called it the finest free-kick in Premier League history.",
+      "January 30, 2008: Manchester United 2-0 Portsmouth, Premier League at Old Trafford. A 30-yard knuckleball free kick clocked at 105 km/h that swerved violently into David James' top corner with zero spin. Sir Alex Ferguson famously called it the finest free-kick in Premier League history.",
     year: 2008,
     opponent: "Portsmouth",
     competition: "Premier League",
@@ -44,7 +44,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-3",
     title: "Gravity Defier: The 2.56m Sampdoria Header",
     description:
-      "Airborne hang time of 0.92 seconds with a vertical leap higher than the crossbar. Claudio Ranieri stopped in awe and likened Cristiano's takeoff to an NBA superstar.",
+      "December 18, 2019: Sampdoria 1-2 Juventus, Serie A at Stadio Luigi Ferraris. Ronaldo jumped 2.56 meters (his head higher than the crossbar) with an airborne hang time of 0.71 seconds before hammering the header home. Claudio Ranieri stopped in awe and likened Cristiano's takeoff to an NBA superstar.",
     year: 2019,
     opponent: "Sampdoria",
     competition: "Serie A",
@@ -59,7 +59,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-4",
     title: "Clutch World Cup Hat-Trick vs Spain",
     description:
-      "An 88th-minute curling masterclass to complete an electrifying World Cup hat-trick and snatch a 3-3 draw in Sochi. The quintessential display of ice-cold captaincy under planetary pressure.",
+      "June 15, 2018: Portugal 3-3 Spain, FIFA World Cup Group Stage in Sochi. An 88th-minute curling masterclass free kick over the wall to complete an electrifying World Cup hat-trick and rescue a 3-3 draw in one of the greatest World Cup clashes of all time.",
     year: 2018,
     opponent: "Spain",
     competition: "FIFA World Cup",
@@ -74,7 +74,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-5",
     title: "40-Yard Rocket at Estádio do Dragão",
     description:
-      "A thunderous 40-yard strike in hostile territory against FC Porto that won the inaugural FIFA Puskás Award in 2009. The shot was clocked at over 103 km/h with impossible trajectory.",
+      "April 15, 2009: FC Porto 0-1 Manchester United, UCL Quarter-Final. A thunderous 40-yard supersonic missile traveling at over 103 km/h from an impossible angle that won the inaugural 2009 FIFA Puskás Award.",
     year: 2009,
     opponent: "FC Porto",
     competition: "UEFA Champions League Quarter-Final",
@@ -89,7 +89,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-6",
     title: "Moscow Rain: Champions League Final Header",
     description:
-      "Soaring over Michael Essien in torrential Moscow rain to open the scoring in the 2008 Champions League Final. The breakthrough goal on the night he captured his first European title.",
+      "May 21, 2008: Manchester United vs Chelsea, UEFA Champions League Final in Moscow. Soaring over Michael Essien in torrential rain to open the scoring in the 26th minute on the night he captured his first European title.",
     year: 2008,
     opponent: "Chelsea FC",
     competition: "UEFA Champions League Final",
@@ -104,7 +104,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-7",
     title: "The Solo Remontada Hat-Trick",
     description:
-      "Trailing 2-0 from the first leg against Simeone's Atletico Madrid, Ronaldo delivered two headers and a nerveless 86th-minute penalty to shock Europe and send Juventus to the quarters.",
+      "March 12, 2019: Juventus 3-0 Atletico Madrid, UCL Round of 16 in Turin. Trailing 2-0 from the first leg, Ronaldo delivered two headers and a nerveless 86th-minute penalty to complete a legendary hat-trick and send Juventus to the quarter-finals.",
     year: 2019,
     opponent: "Atletico Madrid",
     competition: "UEFA Champions League Round of 16",
@@ -119,7 +119,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-8",
     title: "Supercopa Thunderbolt at Camp Nou",
     description:
-      "Cutting inside Gerard Piqué before blasting a rocket into the top corner at Camp Nou during the 2017 Supercopa. He immediately produced an iconic jersey-holding celebration in front of the Catalan crowd.",
+      "August 13, 2017: Real Madrid 3-1 Barcelona, Supercopa de España at Camp Nou. Cutting inside Gerard Piqué before blasting a rocket into the top corner in the 80th minute, followed by an iconic jersey-holding celebration in front of the Catalan crowd.",
     year: 2017,
     opponent: "FC Barcelona",
     competition: "Supercopa de España",
@@ -136,7 +136,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-9",
     title: "The Birth of 'SIUUU!' in Miami",
     description:
-      "August 7, 2013 at Sun Life Stadium in Miami: Cristiano debuted the jump-spin celebration against Chelsea, shouting 'Sí!' upon landing. It would evolve into the most famous gesture in modern sporting history.",
+      "August 7, 2013: Real Madrid 3-1 Chelsea, International Champions Cup Final at Hard Rock Stadium (Sun Life Stadium) in Miami. Ronaldo scored twice and first debuted his iconic 'SIUUU' jump-spin celebration, later explaining: 'It just came out naturally, I don't know where it came from.'",
     year: 2013,
     opponent: "Chelsea FC",
     competition: "International Champions Cup",
@@ -151,7 +151,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-10",
     title: "'Calma, Calma' at the Camp Nou",
     description:
-      "Silencing 98,000 hostile fans with palms outstretched downwards after slotting home the decisive winner in the 2012 title decider. The definitive gesture of supreme athletic calm in the face of pressure.",
+      "April 21, 2012: Real Madrid 2-1 Barcelona, La Liga title-deciding El Clásico at Camp Nou. Ronaldo scored the 73rd-minute winner and gestured 'Calma, Calma' to silence 98,000 hostile fans, virtually sealing Real Madrid's historic 100-point league title.",
     year: 2012,
     opponent: "FC Barcelona",
     competition: "La Liga (El Clásico)",
@@ -166,7 +166,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-11",
     title: "Muscular Pose: La Décima Glory in Lisbon",
     description:
-      "Sealing Real Madrid's 10th Champions League crown with a 120th-minute penalty in his home country. Ripping off his shirt to strike a gladiator flex that graced every sports cover on Earth.",
+      "May 24, 2014: Real Madrid 4-1 Atletico Madrid, UEFA Champions League Final in Lisbon. Sealing Real Madrid's 10th European crown with a 120th-minute penalty, setting a single-season record of 17 UCL goals, followed by his iconic gladiator flex celebration.",
     year: 2014,
     opponent: "Atletico Madrid",
     competition: "UEFA Champions League Final",
@@ -181,7 +181,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-12",
     title: "Touchline Commander at Euro 2016",
     description:
-      "Forced off early through injury in Paris, Cristiano spent extra time hobbling alongside coach Fernando Santos on the sideline. Barking instructions and inspiring Éder to strike the historic winner.",
+      "July 10, 2016: Portugal 1-0 France, UEFA Euro 2016 Final at Stade de France. Injured at 25' by Dimitri Payet's tackle, Cristiano refused to leave, coaching and motivating his teammates from the sideline alongside Fernando Santos until Éder struck the extra-time winner.",
     year: 2016,
     opponent: "France",
     competition: "UEFA Euro 2016 Final",
@@ -196,7 +196,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-13",
     title: "'Eu Estou Aqui' Hat-Trick in Solna",
     description:
-      "November 2013: Trailing Zlatan Ibrahimovic in Stockholm, Cristiano netted a scintillating hat-trick to send Portugal to the World Cup, pointing to the pitch: 'Eu estou aqui' (I am here).",
+      "November 19, 2013: Sweden 2-3 Portugal, World Cup Playoff second leg at Friends Arena in Solna. Trailing Zlatan Ibrahimović, Cristiano struck an electric hat-trick to send Portugal to the World Cup, pointing to the turf: 'Eu estou aqui' (I am here).",
     year: 2013,
     opponent: "Sweden",
     competition: "FIFA World Cup Qualifying Playoff",
@@ -211,7 +211,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-14",
     title: "Cardiff Synchronized Siuuu with Marcelo",
     description:
-      "A glorious brace against Juventus in the 2017 Champions League final in Wales followed by an electric synchronized celebration with closest brother-in-arms Marcelo.",
+      "June 3, 2017: Real Madrid 4-1 Juventus, UEFA Champions League Final in Cardiff. A clinical brace made Ronaldo the first player to score in three modern UCL finals, punctuated by an electric synchronized celebration with closest brother-in-arms Marcelo.",
     year: 2017,
     opponent: "Juventus",
     competition: "UEFA Champions League Final",
@@ -228,7 +228,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-15",
     title: "Lifting Euro 2016 at Stade de France",
     description:
-      "The crowning jewel of Portuguese sporting history. Captain Cristiano weeping with joy as he raised his nation's first major international trophy in front of 80,000 in Saint-Denis.",
+      "July 10, 2016: Portugal 1-0 France, UEFA Euro 2016 Final at Stade de France. Captain Cristiano weeping with joy as he raised his nation's first major international trophy in national history in front of 80,000 in Saint-Denis.",
     year: 2016,
     opponent: "France",
     competition: "UEFA Euro 2016 Final",
@@ -243,7 +243,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-16",
     title: "Historic Champions League Three-Peat",
     description:
-      "Kyiv, May 2018: Real Madrid wins its third consecutive Champions League and Cristiano's 5th career UCL title. An unprecedented feat in modern football era.",
+      "May 26, 2018: Real Madrid 3-1 Liverpool, NSC Olimpiyskiy in Kyiv. Real Madrid wins its third consecutive Champions League and Cristiano's 5th career UCL title, finishing as top scorer with 15 goals in an unprecedented modern feat.",
     year: 2018,
     opponent: "Liverpool FC",
     competition: "UEFA Champions League Final",
@@ -258,7 +258,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-17",
     title: "First Ballon d'Or in Manchester",
     description:
-      "At just 23 years old, Cristiano swept European football after a 42-goal treble season with Manchester United, becoming the fourth United player in history to claim the golden ball.",
+      "December 2, 2008: At just 23 years old, Cristiano swept European football after a 42-goal Premier League and Champions League double season with Manchester United, winning his first Ballon d'Or.",
     year: 2008,
     opponent: "Global Elite",
     competition: "France Football Ballon d'Or",
@@ -273,7 +273,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-18",
     title: "5th Ballon d'Or at the Eiffel Tower",
     description:
-      "Presented atop the glittering Eiffel Tower in Paris to equal Lionel Messi on five Ballon d'Or awards. A triumphant testament to relentless work ethic and resilience.",
+      "December 7, 2017: Cristiano received his 5th Ballon d'Or atop the illuminated Eiffel Tower in Paris after leading Real Madrid to five trophies in a calendar year, tying Lionel Messi on five golden balls.",
     year: 2017,
     opponent: "Global Elite",
     competition: "France Football Ballon d'Or",
@@ -288,7 +288,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-19",
     title: "Inaugural UEFA Nations League Triumph",
     description:
-      "June 2019 at the Estádio do Dragão in Porto: Captaining Portugal to their second major trophy in three years, bolstered by his semi-final hat-trick against Switzerland.",
+      "June 9, 2019: Portugal 1-0 Netherlands, Estádio do Dragão in Porto. Captaining Portugal to their second major European trophy in three years, bolstered by his semi-final hat-trick against Switzerland.",
     year: 2019,
     opponent: "Netherlands",
     competition: "UEFA Nations League Final",
@@ -305,7 +305,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-20",
     title: "Father & Son: Ballon d'Or Stage Embrace",
     description:
-      "Cristiano Jr. running up onto the stage in Zurich in January 2014 as his father wept openly. A tender glimpse into the devotion and family bond anchoring the world's most scrutinized athlete.",
+      "January 13, 2014: Kongresshaus Zurich. Cristiano Jr. walked onto the stage as his father wept openly upon receiving his second Ballon d'Or, dedicated to Eusébio and his family. A tender glimpse into the devotion and family bond anchoring the world's most scrutinized athlete.",
     year: 2014,
     opponent: "Family",
     competition: "FIFA Ballon d'Or Gala",
@@ -320,7 +320,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-21",
     title: "The 4:00 AM Ice Bath Discipline",
     description:
-      "Stories from Carlo Ancelotti and Rio Ferdinand of Cristiano soaking in -160°C cryo chambers and swimming at 4:00 AM after returning from European away games. The inhuman discipline behind eternal longevity.",
+      "Documented by Carlo Ancelotti and Rio Ferdinand: Stories of Cristiano soaking in -160°C cryo chambers and swimming laps at 4:00 AM after returning from European away matches. The inhuman discipline behind eternal longevity across three decades.",
     year: 2020,
     opponent: "Time & Aging",
     competition: "Recovery Regimen",
@@ -335,8 +335,8 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-22",
     title: "Madeira Homecoming & The CR7 Museum",
     description:
-      "Returning to his island home in Funchal to unveil the Museu CR7 overlooking the Atlantic Ocean. Dedicated to his late father Dinis Aveiro and inspiring every underprivileged boy in Portugal.",
-    year: 2015,
+      "December 15, 2013: Returning to his island home in Funchal to unveil the Museu CR7 overlooking the Atlantic Ocean. Dedicated to his late father Dinis Aveiro and inspiring every underprivileged child in Portugal.",
+    year: 2013,
     opponent: "Roots",
     competition: "Funchal, Madeira",
     category: "personal",
@@ -350,8 +350,8 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-23",
     title: "Childhood Dreams in Quinta do Falcão",
     description:
-      "Sweeping streets and kicking crushed soda cans in the poverty-stricken hills of Madeira. Promising his mother Dolores that one day he would buy her a mansion and conquer the world.",
-    year: 2000,
+      "1997: Sweeping streets and kicking crushed soda cans in the poverty-stricken hills of Santo António, Madeira. Promising his mother Dolores that one day he would buy her a mansion and conquer the world, before boarding a flight alone at age 12 to join Sporting CP.",
+    year: 1997,
     opponent: "Adversity",
     competition: "Youth Academy",
     category: "personal",
@@ -365,7 +365,7 @@ export const ICONIC_MOMENTS_DATA: IconicMoment[] = [
     id: "m-24",
     title: "Tears for Goal #900 in Lisbon",
     description:
-      "September 5, 2024: Collapsing to his knees in tears at Estádio da Luz after volleying home his 900th career goal against Croatia. A rare moment of pure emotional release from the most accomplished footballer alive.",
+      "September 5, 2024: Portugal 2-1 Croatia, UEFA Nations League at Estádio da Luz in Lisbon. Minute 34 volley from Nuno Mendes' cross to score his 900th official career goal, collapsing to his knees in tears in front of 60,000 home fans.",
     year: 2024,
     opponent: "Croatia",
     competition: "UEFA Nations League",
