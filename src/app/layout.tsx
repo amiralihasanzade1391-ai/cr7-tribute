@@ -1,13 +1,29 @@
 import type { Metadata, Viewport } from "next";
+import { Anton, Bebas_Neue, Inter } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CursorProvider } from "@/components/cursor/CursorContext";
 import { CustomCursor } from "@/components/cursor/CustomCursor";
 import "./globals.css";
 
-// Fonts are loaded locally via CSS variables to avoid Google Fonts blocking during build.
-const anton = { variable: "--font-anton" };
-const bebasNeue = { variable: "--font-bebas" };
-const inter = { variable: "--font-inter" };
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-anton",
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "The GOAT's — Cristiano Ronaldo Cinematic Tribute",
