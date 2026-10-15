@@ -1,4 +1,4 @@
-name: Build and Deploy CR7 Tribute
+name: Build Next.js for Mizbanfa
 
 on:
   push:
@@ -6,14 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 20
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -24,15 +25,25 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: FTP Deploy .next folder
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Copy public into .next
+        run: |
+          cp -r public .next/ 2>/dev/null || true
+
+      - name: Zip build artifacts
+        run: |
+          zip -r build.zip .next public package.json package-lock.json next.config.mjs server.js
+
+      - name: Delete old release
+        run: gh release delete latest --yes 2>/dev/null || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload to Latest Release
+        uses: softprops/action-gh-release@v2
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /cr7tribute/
-          local-dir: ./.next/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+          tag_name: latest
+          files: build.zip
+          prerelease: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
