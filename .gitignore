@@ -6,3 +6,5 @@ node_modules
 .DS_Store 
 .vercel 
 next-build*.tar.gz 
+*.zip 
+next-build*.tar.gz 
