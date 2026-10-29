@@ -3,6 +3,7 @@ import { Anton, Bebas_Neue, Inter } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CursorProvider } from "@/components/cursor/CursorContext";
 import { CustomCursor } from "@/components/cursor/CustomCursor";
+import { AuthProvider } from "@/components/providers/AuthProvider";
 import "./globals.css";
 
 const anton = Anton({
@@ -77,12 +78,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://img.youtube.com" />
       </head>
       <body className="antialiased bg-[#0A0A0A] text-white overflow-x-hidden">
-        <SmoothScrollProvider>
-          <CursorProvider>
-            <CustomCursor />
-            {children}
-          </CursorProvider>
-        </SmoothScrollProvider>
+        <AuthProvider>
+          <SmoothScrollProvider>
+            <CursorProvider>
+              <CustomCursor />
+              {children}
+            </CursorProvider>
+          </SmoothScrollProvider>
+        </AuthProvider>
       </body>
     </html>
   );

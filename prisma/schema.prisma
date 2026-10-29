@@ -1,0 +1,123 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  role      String   @default("ADMIN") // ADMIN or EDITOR
+  createdAt DateTime @default(now())
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  filename  String
+  url       String
+  type      String   // image or video
+  size      Int?     // bytes
+  createdAt DateTime @default(now())
+}
+
+model Trophy {
+  id          String   @id
+  name        String
+  count       Int      @default(1)
+  years       String   // JSON array string
+  icon        String   @default("🏆")
+  image       String?
+  tier        String   @default("gold") // gold, silver, bronze
+  category    String   @default("club") // club, international, individual, records
+  description String
+  firstWon    Int?
+  mostRecent  Int?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Moment {
+  id          String   @id
+  title       String
+  description String
+  year        Int
+  opponent    String?
+  competition String?
+  category    String   @default("goal") // goal, celebration, trophy, personal
+  imageUrl    String
+  videoId     String?
+  tags        String   // comma separated or JSON string
+  likes       Int      @default(0)
+  order       Int      @default(0)
+  aspectRatio String   @default("tall") // tall, square, wide
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Era {
+  id           String   @id
+  name         String
+  years        String
+  description  String
+  primaryColor String   @default("#FEBE10")
+  accentColor  String   @default("#FEBE10")
+  bgColor      String   @default("#000000")
+  textColor    String   @default("#FFFFFF")
+  images       String   // JSON string array
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Goal {
+  id          String   @id @default(cuid())
+  title       String
+  opponent    String
+  competition String
+  year        Int
+  minute      Int?
+  videoId     String?
+  thumbnail   String?
+  description String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+model Quote {
+  id        String   @id @default(cuid())
+  text      String
+  year      Int?
+  context   String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model Record {
+  id          String   @id
+  title       String
+  value       String
+  description String
+  icon        String   @default("🔥")
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+model SiteSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
+
+model ActivityLog {
+  id        String   @id @default(cuid())
+  action    String
+  details   String?
+  user      String   @default("Admin")
+  createdAt DateTime @default(now())
+}

@@ -34,6 +34,17 @@ export function TrophyCabinet() {
           <p className="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto">
             {total}+ major trophies. 5 Ballon d'Or. Every. Single. One.
           </p>
+
+          <div className="mt-6 flex justify-center">
+            <a
+              href="/trophy-room"
+              className="group inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#FEBE10] via-yellow-400 to-[#d49e0c] text-black font-mono font-black text-xs uppercase tracking-widest shadow-[0_0_25px_rgba(254,190,16,0.4)] hover:shadow-[0_0_35px_rgba(254,190,16,0.6)] hover:scale-105 transition-all"
+            >
+              <span className="w-2 h-2 rounded-full bg-black animate-ping" />
+              <span>Enter 3D Royal Trophy Room</span>
+              <span className="text-sm font-bold group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
+          </div>
         </div>
 
         {/* Filter Tabs */}

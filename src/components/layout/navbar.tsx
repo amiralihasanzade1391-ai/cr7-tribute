@@ -21,10 +21,11 @@ export function Navbar() {
     { label: "Home", href: "/" },
     { label: "Stats", href: "#live-stats" },
     { label: "Timeline", href: "#career-timeline" },
-    { label: "Moments", href: "#iconic-moments" },
     { label: "Trophies", href: "#trophy-cabinet" },
-    { label: "Reel", href: "#goal-reel" },
-    { label: "The Lab", href: "#cyborg-lab" },
+    { label: "3D Room", href: "/trophy-room", isHighlight: true },
+    { label: "Records", href: "#records-grid" },
+    { label: "Time Machine", href: "#time-machine" },
+    { label: "Quotes", href: "#quotes-section" },
   ];
 
   return (
@@ -49,7 +50,11 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-xs uppercase tracking-widest font-bold text-zinc-300 hover:text-yellow-400 transition-colors min-h-[44px] flex items-center px-2"
+              className={`text-xs uppercase tracking-widest font-bold transition-all min-h-[44px] flex items-center px-2 ${
+                link.isHighlight
+                  ? "text-[#FEBE10] bg-[#FEBE10]/15 hover:bg-[#FEBE10]/25 border border-[#FEBE10]/40 rounded-full px-3.5 py-1 shadow-[0_0_15px_rgba(254,190,16,0.25)]"
+                  : "text-zinc-300 hover:text-yellow-400"
+              }`}
             >
               {link.label}
             </a>

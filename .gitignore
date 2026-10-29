@@ -8,3 +8,6 @@ node_modules
 next-build*.tar.gz 
 *.zip 
 next-build*.tar.gz 
+*.db
+*.db-journal
+*.sqlite
